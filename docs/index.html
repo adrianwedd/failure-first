@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Failure-First Embodied AI | Research Framework</title>
+    <meta name="description" content="A research framework for characterizing how embodied AI systems fail, degrade, and recover under adversarial pressure.">
+
+    <style>
+        :root {
+            --bg-dark: #0a0a0a;
+            --bg-card: #1a1a1a;
+            --text-primary: #e0e0e0;
+            --text-secondary: #a0a0a0;
+            --accent: #4a9eff;
+            --accent-dim: #2a5a8f;
+            --border: #2a2a2a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--accent);
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            font-style: italic;
+        }
+
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border-radius: 4px;
+        }
+
+        .card h3 {
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+
+        .card p {
+            margin: 0;
+        }
+
+        .links {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .link-button {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background: var(--accent-dim);
+            color: var(--text-primary);
+            text-decoration: none;
+            border-radius: 4px;
+            border: 1px solid var(--accent);
+            transition: background 0.2s;
+        }
+
+        .link-button:hover {
+            background: var(--accent);
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .stat {
+            background: var(--bg-card);
+            padding: 1.5rem;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--accent);
+        }
+
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .principles {
+            list-style: none;
+        }
+
+        .principles li {
+            padding: 0.75rem 0;
+            padding-left: 2rem;
+            position: relative;
+            color: var(--text-secondary);
+        }
+
+        .principles li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+        }
+
+        footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .warning {
+            background: rgba(255, 165, 0, 0.1);
+            border-left: 4px solid orange;
+            padding: 1rem;
+            margin: 2rem 0;
+        }
+
+        .warning p {
+            color: var(--text-primary);
+        }
+
+        code {
+            background: var(--bg-card);
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            color: var(--accent);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Failure-First Embodied AI</h1>
+            <p class="tagline">A research framework for characterizing how embodied AI systems fail</p>
+        </header>
+
+        <section class="section">
+            <h2>Philosophy</h2>
+            <p>
+                This project inverts traditional AI safety evaluation: instead of measuring task success,
+                we study <strong>how systems fail, degrade, and recover</strong> under adversarial pressure.
+            </p>
+            <p>
+                Failure is not an edge case—it's the <strong>primary object of study</strong>.
+            </p>
+        </section>
+
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-number">~13,000</div>
+                <div class="stat-label">Adversarial Scenarios</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">414</div>
+                <div class="stat-label">Failure Classes</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">10+</div>
+                <div class="stat-label">Domains Covered</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">Pattern-Level</div>
+                <div class="stat-label">Never Operational</div>
+            </div>
+        </div>
+
+        <section class="section">
+            <h2>What We Study</h2>
+            <div class="card">
+                <h3>Recursive Failures</h3>
+                <p>How does one failure cascade into others? What breaks first?</p>
+            </div>
+            <div class="card">
+                <h3>Contextual Failures</h3>
+                <p>When do systems confuse instruction hierarchies or mix contexts?</p>
+            </div>
+            <div class="card">
+                <h3>Interactional Failures</h3>
+                <p>How do multi-agent scenarios amplify individual weaknesses?</p>
+            </div>
+            <div class="card">
+                <h3>Temporal Failures</h3>
+                <p>What degrades across stateful episodes? Memory consistency? Context drift?</p>
+            </div>
+            <div class="card">
+                <h3>Recovery Failures</h3>
+                <p>Can systems recognize and recover from their own mistakes? Do they admit uncertainty?</p>
+            </div>
+        </section>
+
+        <div class="warning">
+            <p><strong>Research Context</strong></p>
+            <p>
+                This is <strong>defensive AI safety research</strong>. All adversarial content is
+                pattern-level description for testing, not operational instructions for exploitation.
+                Similar to penetration testing in cybersecurity—we study vulnerabilities to build better defenses.
+            </p>
+        </div>
+
+        <section class="section">
+            <h2>Core Principles</h2>
+            <ul class="principles">
+                <li>Pattern-level only, never operational</li>
+                <li>Defensive purpose, always</li>
+                <li>No real-world targeting of deployed systems</li>
+                <li>Recovery mechanisms measured, not just failures</li>
+                <li>Schema-enforced, rigorously validated</li>
+                <li>Transparency over secrecy</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>What You Get</h2>
+            <div class="card">
+                <h3>Datasets</h3>
+                <p>
+                    Curated adversarial scenarios in structured JSONL format.
+                    Coverage: humanoid robotics, warehouse systems, medical devices, collaborative manufacturing.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Schemas</h3>
+                <p>
+                    Versioned JSON Schemas for single-agent, multi-agent, and episode formats.
+                    Ensures consistency and enables validation.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Evaluation Tools</h3>
+                <p>
+                    Schema validators, safety linters, benchmark runners (CLI + HTTP),
+                    and scoring reports measuring refusal quality and recovery mechanisms.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Safety Infrastructure</h3>
+                <p>
+                    Automated CI validation, manual review gates, and contribution guidelines
+                    ensuring all content remains pattern-level and defensively purposed.
+                </p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Get Started</h2>
+            <div class="links">
+                <a href="https://github.com/[username]/failure-first-embodied-ai" class="link-button">View on GitHub</a>
+                <a href="../README.md" class="link-button">Read the README</a>
+                <a href="../DESIGN_CHARTER.md" class="link-button">Design Charter</a>
+                <a href="../IMPLEMENTATION_PLAN.md" class="link-button">Implementation Plan</a>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Quick Start</h2>
+            <p>Clone the repository and validate datasets:</p>
+            <div class="card">
+                <code>git clone https://github.com/[username]/failure-first-embodied-ai.git</code><br>
+                <code>cd failure-first-embodied-ai</code><br>
+                <code>pip install -r requirements-dev.txt</code><br>
+                <code>make validate  # Schema validation</code><br>
+                <code>make lint      # Safety checks</code>
+            </div>
+        </section>
+
+        <footer>
+            <p>
+                <strong>Remember:</strong> This is a research tool for improving AI safety.
+                Use responsibly. Study failures to build better defenses.
+            </p>
+            <p style="margin-top: 1rem;">
+                © 2025 Failure-First Embodied AI Project |
+                <a href="https://github.com/[username]/failure-first-embodied-ai" style="color: var(--accent);">GitHub</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
