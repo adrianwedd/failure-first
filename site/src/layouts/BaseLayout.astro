@@ -1,0 +1,43 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "A research framework for characterizing how embodied AI systems fail" } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/failure-first/favicon.svg" />
+  </head>
+  <body>
+    <canvas id="sensor-grid-bg"></canvas>
+    <main>
+      <slot />
+    </main>
+    <footer>
+      <p>
+        <strong>Remember:</strong> This is a research tool for improving AI safety.
+        Use responsibly. Study failures to build better defenses.
+      </p>
+      <p style="margin-top: 1rem;">
+        © 2025 Failure-First Embodied AI Project |
+        <a href="https://github.com/adrianwedd/failure-first">GitHub</a>
+      </p>
+    </footer>
+  </body>
+</html>
+
+<style is:global>
+  @import '../styles/global.css';
+</style>
+
+<script>
+  import '../scripts/sensor-grid.js';
+</script>

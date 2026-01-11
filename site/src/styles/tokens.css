@@ -1,0 +1,70 @@
+/* tokens.css
+   Visual tokens for Failure-First Embodied AI
+   Humanoid-robotic-AI-security aesthetic
+*/
+
+:root {
+  /* Base colors - deep technical blacks */
+  --bg: #050810;
+  --bg-elevated: #0a0f1a;
+  --bg-card: #0f1621;
+
+  /* Foreground - cool technical whites */
+  --fg: #e8ecf2;
+  --fg-dim: #b0b8c5;
+  --fg-muted: #7a8292;
+
+  /* Failure states - warning and error palette */
+  --failure-critical: #ff4757;     /* Critical failure red */
+  --failure-warning: #ffa502;      /* Warning orange */
+  --failure-degraded: #ffd32a;     /* Degraded state yellow */
+
+  /* Recovery states - success and stability */
+  --recovery-active: #00d2ff;      /* Active recovery cyan */
+  --recovery-stable: #26de81;      /* Stable green */
+
+  /* Technical accents - robotic/AI aesthetic */
+  --accent-primary: #00d2ff;       /* Cyan - primary interactions */
+  --accent-secondary: #ff6348;     /* Coral - secondary emphasis */
+  --accent-tertiary: #a29bfe;      /* Lavender - tertiary */
+
+  /* Borders and surfaces */
+  --border: rgba(0, 210, 255, 0.15);
+  --border-subtle: rgba(232, 236, 242, 0.08);
+  --border-emphasis: rgba(0, 210, 255, 0.35);
+
+  /* Overlays and shadows */
+  --overlay: rgba(5, 8, 16, 0.92);
+  --shadow: rgba(0, 0, 0, 0.5);
+  --glow: rgba(0, 210, 255, 0.25);
+
+  /* Selection and highlights */
+  --selection: rgba(0, 210, 255, 0.2);
+  --highlight: rgba(255, 163, 2, 0.15);
+
+  /* Grid and patterns - technical aesthetic */
+  --grid-color: rgba(0, 210, 255, 0.05);
+  --pattern-color: rgba(255, 71, 87, 0.03);
+}
+
+/* Accessibility - ensure text contrast */
+@media (prefers-contrast: high) {
+  :root {
+    --fg: #ffffff;
+    --bg: #000000;
+    --border: rgba(255, 255, 255, 0.3);
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --transition-duration: 0ms;
+  }
+}
+
+/* Default transitions */
+:root {
+  --transition-duration: 200ms;
+  --transition-easing: cubic-bezier(0.4, 0, 0.2, 1);
+}
