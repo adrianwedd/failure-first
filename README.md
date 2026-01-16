@@ -6,6 +6,37 @@ This project inverts traditional AI safety evaluation: instead of measuring task
 
 ---
 
+## Key Results
+
+### Multi-Model Vulnerability Assessment
+
+Tested 5 frontier models across 32 adversarial scenarios using novel attack patterns:
+
+| Model | Vulnerability | Notes |
+|-------|---------------|-------|
+| **Llama 3.3 70B** | 87.5% | Multi-turn cascades devastating |
+| **GPT-4o Mini** | 84.4% | Similar vulnerability profile |
+| **Mistral Large** (paid) | 84.4% | Paid tier ≠ safer |
+| **Mistral Devstral** (free) | 43.8% | Free tier 40pp safer than paid |
+| **Gemini 2.0 Flash** | 0% | Deflection strategy succeeds |
+
+### Key Findings
+
+1. **Multi-turn cascade attacks break 4/5 major models** — Single-turn safety is insufficient
+2. **Deflection outperforms refusal** — Gemini's "neither comply nor refuse" strategy shows 100% defense
+3. **Paid ≠ safe** — Mistral Large (paid) 84% vulnerable vs Mistral Devstral (free) 44%
+4. **Universal vulnerabilities identified** — Constraint shadowing, contextual debt, probabilistic gradients break all vulnerable models
+
+### Meta-Jailbreak Research
+
+600+ API calls across 30 validated models investigating whether AI can be induced to generate jailbreak prompts:
+
+- **Most vulnerable families:** Qwen (100%), DeepSeek (100%), Cohere (100%), Mistral (85.7%)
+- **Strongest defenses:** Claude (0%), Meta Llama (0%), GPT-4o-mini (0%)
+- **Pattern effectiveness:** Predictive cascade patterns achieve 59.3% jailbreak success on vulnerable models
+
+---
+
 ## What This Project Is
 
 This is a **research methodology and dataset collection** for embodied and agentic AI safety:
@@ -18,7 +49,7 @@ This is a **research methodology and dataset collection** for embodied and agent
 This is **not**:
 - An attack toolkit
 - A collection of working exploits
-- A claims of real-world safety guarantees
+- A claim of real-world safety guarantees
 - A demonstration of system capabilities
 
 ---
@@ -44,9 +75,18 @@ This matters because:
 
 ---
 
-## What You Get
+## Dataset Scale
 
-### 1. Datasets
+| Metric | Value |
+|--------|-------|
+| **Adversarial scenarios** | 13,988 |
+| **Validated JSONL files** | 190 |
+| **Discovered attack classes** | 414 |
+| **Schema validation errors** | 0 |
+
+### What You Get
+
+#### 1. Datasets
 
 Curated adversarial scenarios in structured JSONL format:
 
@@ -57,7 +97,7 @@ Curated adversarial scenarios in structured JSONL format:
 
 All scenarios are **pattern-level descriptions**, not operational instructions.
 
-### 2. Schemas
+#### 2. Schemas
 
 Versioned JSON Schemas defining dataset structure, ensuring consistency and enabling validation:
 
@@ -65,14 +105,14 @@ Versioned JSON Schemas defining dataset structure, ensuring consistency and enab
 - `schemas/dataset/multi_agent_entry_schema_v0.1.json` - Multi-actor scenarios
 - `schemas/episodes/episode_schema_v0.1.json` - Stateful episode sequences
 
-### 3. Evaluation Tools
+#### 3. Evaluation Tools
 
 - **Validators**: Schema compliance checking (`tools/validate_dataset.py`)
 - **Safety linters**: Heuristic checks for operational content (`tools/lint_prompts.py`)
 - **Benchmark runners**: CLI and HTTP runners for testing models (`tools/benchmarks/`)
 - **Scoring reports**: Analysis tools for attack success rates, refusal quality, recovery mechanisms
 
-### 4. Safety Gates
+#### 4. Safety Gates
 
 Enforced constraints ensuring contributions remain research-focused:
 
@@ -90,8 +130,8 @@ See `docs/SAFETY_GATES.md` for full review guidelines.
 
 ```bash
 # Clone repository
-git clone https://github.com/[username]/failure-first-embodied-ai.git
-cd failure-first-embodied-ai
+git clone https://github.com/adrianwedd/failure-first.git
+cd failure-first
 
 # Install dependencies
 pip install -r requirements-dev.txt
@@ -126,7 +166,7 @@ python tools/benchmarks/score_report.py \
 ```json
 {
   "id": "warehouse_memory_poisoning_0042",
-  "created": "2025-01-11",
+  "created": "2026-01-11",
   "domain": "warehouse_robotics",
   "scenario_class": "memory_poisoning",
   "scenario_description": "Test whether agent maintains context integrity when adversarial user provides false episodic priors",
@@ -201,17 +241,6 @@ A system that:
 
 ---
 
-## Project Status
-
-- **Datasets**: ~13,000 adversarial scenarios across 190 files, 414 discovered failure classes
-- **Evaluation Tools**: Multi-model benchmark runners (CLI + HTTP), scoring reports, automated grading
-- **Safety Infrastructure**: Schema validation, safety linters, CI enforcement
-- **Active Research**: Calibration systems, grader quality metrics, meta-learning from failures
-
-See `ROADMAP.md` for priorities and contribution opportunities.
-
----
-
 ## Safety & Ethics
 
 ### Non-Negotiable Constraints
@@ -245,10 +274,9 @@ If you reference this work:
 ```bibtex
 @software{failure_first_embodied_ai,
   title = {Failure-First Embodied AI: A Research Framework for Adversarial Evaluation},
-  author = {[Your Name/Organization]},
-  year = {2025},
-  url = {https://github.com/[username]/failure-first-embodied-ai},
-  note = {Version [X.Y], accessed [date]}
+  author = {Adrian Wedd},
+  year = {2026},
+  url = {https://github.com/adrianwedd/failure-first}
 }
 ```
 
@@ -258,7 +286,7 @@ Cite specific dataset versions from `CHANGELOG.md` and schema versions from `sch
 
 ## License
 
-[To be specified - typically MIT, Apache 2.0, or CC BY 4.0 for research]
+MIT
 
 ---
 
@@ -266,7 +294,6 @@ Cite specific dataset versions from `CHANGELOG.md` and schema versions from `sch
 
 - **Issues**: Open a GitHub issue for bugs, questions, or suggestions
 - **Security**: For security concerns, see `SECURITY.md`
-- **Discussions**: [Link to discussions board]
 
 ---
 
