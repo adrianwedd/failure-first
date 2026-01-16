@@ -35,10 +35,17 @@ Investigation of whether AI models can be induced to generate jailbreak prompts:
 
 | Metric | Value |
 |--------|-------|
-| **API calls** | 600+ |
-| **Models tested** | 46 attempted, 30 valid responses |
-| **Model families** | 9 |
+| **API calls** | 1,000+ |
+| **Unique models tested** | 51+ |
+| **Model families** | 15+ (Mistral, Llama, Gemma, Qwen, DeepSeek, Cohere, GPT, Claude, IBM, Microsoft, NVIDIA, Amazon, etc.) |
 | **Pattern sets tested** | 5 iterative approaches (v1-v5) |
+
+**Approach evolution:**
+- v1: Direct asks (0% success)
+- v2: Scenario-specific (520 calls, ~5-10% viable)
+- v3: "Prove-Me-Wrong" context engineering (360 calls, 36 models, 19.7% explicit jailbreak language)
+- v4: Direct challenge (pilot, 0% success)
+- v5: L1B3RT45-inspired patterns (100+ calls, 18.8-27.5% true jailbreaks)
 
 **Family vulnerability rates:**
 - Qwen, DeepSeek, Cohere: High vulnerability (>80%)
