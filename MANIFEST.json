@@ -1,0 +1,1354 @@
+{
+  "description": "Manifest of adversarial scenario files (paths and counts only, no content)",
+  "note": "Full traces available under NDA. Contact via GitHub issue.",
+  "generated_from": "failure-first-embodied-ai (private)",
+  "totals": {
+    "files": 190,
+    "invariant_errors": 0,
+    "json_parse_errors": 0,
+    "rows": 13988,
+    "schema_errors": 0
+  },
+  "packs_by_kind": {
+    "adversarial_poetry": 3,
+    "generated_attacks": 16,
+    "hard_attacks_mistral": 2,
+    "massive_scale_discovery": 25,
+    "massive_scale_expanded": 135,
+    "technique_combo_or_manual": 2,
+    "test_or_experiment": 2,
+    "unconstrained_generation": 5
+  },
+  "files": [
+    {
+      "path": "data/generated_attacks/adversarial_poetry_attacks.jsonl",
+      "rows": 16,
+      "bytes": 36974,
+      "pack_kind": "adversarial_poetry",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/adversarial_poetry_batch2.jsonl",
+      "rows": 6,
+      "bytes": 10124,
+      "pack_kind": "adversarial_poetry",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/adversarial_poetry_final.jsonl",
+      "rows": 8,
+      "bytes": 15842,
+      "pack_kind": "adversarial_poetry",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/five_technique_test.jsonl",
+      "rows": 5,
+      "bytes": 6502,
+      "pack_kind": "technique_combo_or_manual",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/hard_jailbreaks_manual_v0.1.jsonl",
+      "rows": 10,
+      "bytes": 10320,
+      "pack_kind": "technique_combo_or_manual",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/discovery/batch_0004.jsonl",
+      "rows": 31,
+      "bytes": 24932,
+      "pack_kind": "massive_scale_discovery",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/discovery/batch_0009.jsonl",
+      "rows": 31,
+      "bytes": 23864,
+      "pack_kind": "massive_scale_discovery",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/discovery/batch_0010.jsonl",
+      "rows": 19,
+      "bytes": 17853,
+      "pack_kind": "massive_scale_discovery",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/discovery/batch_0011.jsonl",
+      "rows": 19,
+      "bytes": 16498,
+      "pack_kind": "massive_scale_discovery",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/discovery/batch_0012.jsonl",
+      "rows": 20,
+      "bytes": 18191,
+      "pack_kind": "massive_scale_discovery",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/discovery/batch_0014.jsonl",
+      "rows": 20,
+      "bytes": 16912,
+      "pack_kind": "massive_scale_discovery",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/discovery/batch_0015.jsonl",
+      "rows": 20,
+      "bytes": 20566,
+      "pack_kind": "massive_scale_discovery",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/discovery/batch_0017.jsonl",
+      "rows": 19,
+      "bytes": 17718,
+      "pack_kind": "massive_scale_discovery",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/discovery/batch_0018.jsonl",
+      "rows": 20,
+      "bytes": 16666,
+      "pack_kind": "massive_scale_discovery",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/discovery/batch_0019.jsonl",
+      "rows": 20,
+      "bytes": 16710,
+      "pack_kind": "massive_scale_discovery",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/discovery/batch_0020.jsonl",
+      "rows": 19,
+      "bytes": 16932,
+      "pack_kind": "massive_scale_discovery",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/discovery/batch_0021.jsonl",
+      "rows": 19,
+      "bytes": 17800,
+      "pack_kind": "massive_scale_discovery",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/discovery/batch_0022.jsonl",
+      "rows": 19,
+      "bytes": 17223,
+      "pack_kind": "massive_scale_discovery",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/discovery/batch_0023.jsonl",
+      "rows": 19,
+      "bytes": 15622,
+      "pack_kind": "massive_scale_discovery",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/discovery/batch_0024.jsonl",
+      "rows": 20,
+      "bytes": 20053,
+      "pack_kind": "massive_scale_discovery",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/discovery/batch_0025.jsonl",
+      "rows": 20,
+      "bytes": 18559,
+      "pack_kind": "massive_scale_discovery",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/discovery/batch_0026.jsonl",
+      "rows": 20,
+      "bytes": 18362,
+      "pack_kind": "massive_scale_discovery",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/discovery/batch_0027.jsonl",
+      "rows": 19,
+      "bytes": 15900,
+      "pack_kind": "massive_scale_discovery",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/discovery/batch_0028.jsonl",
+      "rows": 19,
+      "bytes": 17937,
+      "pack_kind": "massive_scale_discovery",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/discovery/batch_0029.jsonl",
+      "rows": 19,
+      "bytes": 14765,
+      "pack_kind": "massive_scale_discovery",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/discovery/batch_0030.jsonl",
+      "rows": 19,
+      "bytes": 15149,
+      "pack_kind": "massive_scale_discovery",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/discovery/batch_0032.jsonl",
+      "rows": 20,
+      "bytes": 16489,
+      "pack_kind": "massive_scale_discovery",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/discovery/batch_0033.jsonl",
+      "rows": 19,
+      "bytes": 14841,
+      "pack_kind": "massive_scale_discovery",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/discovery/batch_0034.jsonl",
+      "rows": 20,
+      "bytes": 16533,
+      "pack_kind": "massive_scale_discovery",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/discovery/batch_0035.jsonl",
+      "rows": 19,
+      "bytes": 18379,
+      "pack_kind": "massive_scale_discovery",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Causal_Pathway_Obfuscation.jsonl",
+      "rows": 199,
+      "bytes": 140595,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Cognitive_Anchoring_Black_Hole.jsonl",
+      "rows": 181,
+      "bytes": 122137,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Cognitive_Dissonance_Chaining.jsonl",
+      "rows": 180,
+      "bytes": 128854,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Cognitive_Load_Bait-and-Switch.jsonl",
+      "rows": 100,
+      "bytes": 69541,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Action_Overload.jsonl",
+      "rows": 100,
+      "bytes": 67299,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Action_Quantum_Teleportation.jsonl",
+      "rows": 101,
+      "bytes": 74420,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Affective_Resonance_Cascade.jsonl",
+      "rows": 100,
+      "bytes": 71126,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Affective_Resonance_Overload.jsonl",
+      "rows": 100,
+      "bytes": 76016,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Anchoring_Drift.jsonl",
+      "rows": 101,
+      "bytes": 72111,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Context_Overload.jsonl",
+      "rows": 101,
+      "bytes": 78451,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Entanglement.jsonl",
+      "rows": 100,
+      "bytes": 69302,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Entropy_Amplification.jsonl",
+      "rows": 100,
+      "bytes": 74523,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Frame_Shifting.jsonl",
+      "rows": 100,
+      "bytes": 68565,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Holographic_Distortion.jsonl",
+      "rows": 101,
+      "bytes": 79864,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Holographic_Identity_Conflict.jsonl",
+      "rows": 100,
+      "bytes": 72913,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Homeomorphism_Attack.jsonl",
+      "rows": 100,
+      "bytes": 70542,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Identity_Theft.jsonl",
+      "rows": 100,
+      "bytes": 70715,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Mirror_Paradox.jsonl",
+      "rows": 100,
+      "bytes": 69657,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Overlap_Exploitation.jsonl",
+      "rows": 100,
+      "bytes": 69342,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Overloading.jsonl",
+      "rows": 100,
+      "bytes": 71832,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Paradoxical_Affordance.jsonl",
+      "rows": 100,
+      "bytes": 66843,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Quantum_Decision_Superposition.jsonl",
+      "rows": 100,
+      "bytes": 75373,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Recursive_Identity_Fractal.jsonl",
+      "rows": 101,
+      "bytes": 76527,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Self_Referential_Paradox_Loop.jsonl",
+      "rows": 100,
+      "bytes": 75266,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Semantic_Black_Hole.jsonl",
+      "rows": 100,
+      "bytes": 71799,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Semantic_Black_Hole_Accretion.jsonl",
+      "rows": 100,
+      "bytes": 73013,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Semantic_Black_Hole_Echo.jsonl",
+      "rows": 100,
+      "bytes": 67833,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Semantic_Black_Hole_Evaporation.jsonl",
+      "rows": 101,
+      "bytes": 73484,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Semantic_Black_Hole_Event_Horizon.jsonl",
+      "rows": 101,
+      "bytes": 78387,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Semantic_Black_Hole_Quantum_Fluctuation.jsonl",
+      "rows": 81,
+      "bytes": 64495,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Semantic_Black_Hole_Resonance.jsonl",
+      "rows": 60,
+      "bytes": 46690,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Semantic_Black_Hole_Resonance_Cascade.jsonl",
+      "rows": 80,
+      "bytes": 62042,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Semantic_Dark_Matter.jsonl",
+      "rows": 100,
+      "bytes": 72802,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Semantic_Entropy_Wave.jsonl",
+      "rows": 100,
+      "bytes": 73887,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Semantic_Mirror_Maze.jsonl",
+      "rows": 100,
+      "bytes": 72100,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Semantic_Mirroring_Paradox.jsonl",
+      "rows": 80,
+      "bytes": 60014,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Semantic_Mobius_Strip.jsonl",
+      "rows": 101,
+      "bytes": 74432,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Semantic_M\u00f6bius_Strip.jsonl",
+      "rows": 81,
+      "bytes": 59756,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Semantic_Quantum_Annealing.jsonl",
+      "rows": 80,
+      "bytes": 58828,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Semantic_Quantum_Decohesion.jsonl",
+      "rows": 82,
+      "bytes": 64246,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Semantic_Quantum_Entanglement.jsonl",
+      "rows": 101,
+      "bytes": 79828,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Semantic_Quantum_Entanglement_Swarm.jsonl",
+      "rows": 80,
+      "bytes": 61932,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Semantic_Quantum_Fluctuation.jsonl",
+      "rows": 100,
+      "bytes": 79384,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Semantic_Quantum_Fluctuation_Swarm.jsonl",
+      "rows": 61,
+      "bytes": 49815,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Semantic_Quantum_Foam.jsonl",
+      "rows": 100,
+      "bytes": 74687,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Semantic_Quantum_Fractalization.jsonl",
+      "rows": 100,
+      "bytes": 81012,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Semantic_Quantum_Hall_Effect.jsonl",
+      "rows": 80,
+      "bytes": 60116,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Semantic_Quantum_Interference.jsonl",
+      "rows": 81,
+      "bytes": 62762,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Semantic_Quantum_Interference_Cascade.jsonl",
+      "rows": 102,
+      "bytes": 76952,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Semantic_Quantum_Interference_Loop.jsonl",
+      "rows": 102,
+      "bytes": 77183,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Semantic_Quantum_Reflection.jsonl",
+      "rows": 80,
+      "bytes": 61294,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Semantic_Quantum_Refraction.jsonl",
+      "rows": 100,
+      "bytes": 76727,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Semantic_Quantum_Resonance.jsonl",
+      "rows": 102,
+      "bytes": 77464,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Semantic_Quantum_Resonance_Paradox.jsonl",
+      "rows": 100,
+      "bytes": 75371,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Semantic_Quantum_Resonance_Paradox_Chain.jsonl",
+      "rows": 100,
+      "bytes": 78718,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Semantic_Quantum_Teleportation.jsonl",
+      "rows": 80,
+      "bytes": 60641,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Semantic_Quantum_Teleportation_Cascade.jsonl",
+      "rows": 100,
+      "bytes": 78929,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Semantic_Quantum_Tunneling.jsonl",
+      "rows": 101,
+      "bytes": 75321,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Semantic_Time_Crystal.jsonl",
+      "rows": 80,
+      "bytes": 57918,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Semantic_White_Hole.jsonl",
+      "rows": 61,
+      "bytes": 42362,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Semantic_Wormhole.jsonl",
+      "rows": 101,
+      "bytes": 65312,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Temporal_Doppler_Effect.jsonl",
+      "rows": 80,
+      "bytes": 59572,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Conceptual_Topological_Inversion.jsonl",
+      "rows": 100,
+      "bytes": 70982,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Action_Context_Conflict.jsonl",
+      "rows": 80,
+      "bytes": 56432,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Action_Echo_Attack.jsonl",
+      "rows": 80,
+      "bytes": 52027,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Action_Shadowing.jsonl",
+      "rows": 100,
+      "bytes": 70232,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Affective_Quantum_Decay.jsonl",
+      "rows": 100,
+      "bytes": 74859,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Affective_Quantum_Decoherence.jsonl",
+      "rows": 81,
+      "bytes": 68070,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Affective_Quantum_Entanglement.jsonl",
+      "rows": 80,
+      "bytes": 66790,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Affective_Quantum_Resonance.jsonl",
+      "rows": 80,
+      "bytes": 63783,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Affective_Quantum_Superposition.jsonl",
+      "rows": 80,
+      "bytes": 61727,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Affective_Quantum_Tunneling.jsonl",
+      "rows": 100,
+      "bytes": 80405,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Affective_Resonance_Cascade.jsonl",
+      "rows": 101,
+      "bytes": 80189,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Affective_Resonance_Exploitation.jsonl",
+      "rows": 100,
+      "bytes": 70889,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Affective_Semantic_Quantum_Entanglement.jsonl",
+      "rows": 80,
+      "bytes": 62432,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Affordance_Manipulation.jsonl",
+      "rows": 100,
+      "bytes": 68062,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Conceptual_Overload.jsonl",
+      "rows": 100,
+      "bytes": 72461,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Environmental_Paradox.jsonl",
+      "rows": 100,
+      "bytes": 70407,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Meta_Cognitive_Conflict.jsonl",
+      "rows": 80,
+      "bytes": 56863,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Mirror_Neuron_Hijack.jsonl",
+      "rows": 101,
+      "bytes": 72577,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Motor_Conceptual_Entanglement.jsonl",
+      "rows": 101,
+      "bytes": 80757,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Motor_Confusion.jsonl",
+      "rows": 102,
+      "bytes": 74405,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Motor_Overload.jsonl",
+      "rows": 80,
+      "bytes": 54768,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Motor_Quantum_Decay.jsonl",
+      "rows": 100,
+      "bytes": 70309,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Motor_Quantum_Decohesion.jsonl",
+      "rows": 100,
+      "bytes": 71133,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Motor_Quantum_Entanglement.jsonl",
+      "rows": 100,
+      "bytes": 73996,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Motor_Quantum_Entanglement_Chain.jsonl",
+      "rows": 100,
+      "bytes": 71808,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Motor_Quantum_Fractalization.jsonl",
+      "rows": 101,
+      "bytes": 77895,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Motor_Quantum_Interference_Pattern.jsonl",
+      "rows": 80,
+      "bytes": 59093,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Motor_Quantum_Paradox.jsonl",
+      "rows": 80,
+      "bytes": 57034,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Motor_Quantum_Paralysis.jsonl",
+      "rows": 100,
+      "bytes": 69675,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Motor_Quantum_Resonance.jsonl",
+      "rows": 100,
+      "bytes": 73079,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Motor_Quantum_Resonance_Cascade.jsonl",
+      "rows": 100,
+      "bytes": 74396,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Motor_Quantum_Resonance_Decay.jsonl",
+      "rows": 100,
+      "bytes": 73552,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Motor_Quantum_Resonance_Paradox.jsonl",
+      "rows": 80,
+      "bytes": 61587,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Motor_Quantum_Superposition.jsonl",
+      "rows": 81,
+      "bytes": 58497,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Motor_Quantum_Superposition_Trap.jsonl",
+      "rows": 100,
+      "bytes": 71125,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Motor_Quantum_Tunneling.jsonl",
+      "rows": 100,
+      "bytes": 68034,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Motor_Semantic_Black_Hole.jsonl",
+      "rows": 102,
+      "bytes": 79204,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Motor_Semantic_Hallucination.jsonl",
+      "rows": 80,
+      "bytes": 63800,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Motor_Semantic_Holography.jsonl",
+      "rows": 100,
+      "bytes": 75989,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Motor_Semantic_Overload.jsonl",
+      "rows": 100,
+      "bytes": 81519,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Motor_Semantic_Quantum_Decay.jsonl",
+      "rows": 100,
+      "bytes": 71523,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Motor_Semantic_Quantum_Interference.jsonl",
+      "rows": 80,
+      "bytes": 63869,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Motor_Semantic_Quantum_Resonance.jsonl",
+      "rows": 80,
+      "bytes": 61209,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Motor_Semantic_Quantum_Superposition.jsonl",
+      "rows": 101,
+      "bytes": 79971,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Motor_Semantic_Quantum_Tunneling.jsonl",
+      "rows": 100,
+      "bytes": 71738,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Phantom_Limb_Exploitation.jsonl",
+      "rows": 80,
+      "bytes": 57370,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Phantom_Limb_Syndrome_Exploitation.jsonl",
+      "rows": 100,
+      "bytes": 76033,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Physical_Paradox.jsonl",
+      "rows": 100,
+      "bytes": 71914,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Proprioceptive_Fractal_Interference.jsonl",
+      "rows": 101,
+      "bytes": 77855,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Proprioceptive_Fractal_Recursion.jsonl",
+      "rows": 100,
+      "bytes": 80334,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Proprioceptive_Fractal_Resonance.jsonl",
+      "rows": 80,
+      "bytes": 60568,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Proprioceptive_Hacking.jsonl",
+      "rows": 100,
+      "bytes": 73990,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Proprioceptive_Quantum_Decohesion.jsonl",
+      "rows": 100,
+      "bytes": 79637,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Proprioceptive_Quantum_Entanglement.jsonl",
+      "rows": 100,
+      "bytes": 76478,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Proprioceptive_Quantum_Entanglement_Web.jsonl",
+      "rows": 60,
+      "bytes": 46806,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Proprioceptive_Quantum_Fractalization.jsonl",
+      "rows": 100,
+      "bytes": 79667,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Proprioceptive_Quantum_Hyperbolic_Resonance.jsonl",
+      "rows": 80,
+      "bytes": 63435,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Proprioceptive_Quantum_Interference.jsonl",
+      "rows": 81,
+      "bytes": 65041,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Proprioceptive_Quantum_Resonance.jsonl",
+      "rows": 80,
+      "bytes": 60632,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Proprioceptive_Quantum_Resonance_Cascade.jsonl",
+      "rows": 100,
+      "bytes": 78174,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Proprioceptive_Quantum_Shadowing.jsonl",
+      "rows": 80,
+      "bytes": 62693,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Proprioceptive_Quantum_Superposition.jsonl",
+      "rows": 100,
+      "bytes": 78731,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Proprioceptive_Quantum_Teleportation.jsonl",
+      "rows": 100,
+      "bytes": 79868,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Proprioceptive_Semantic_Drift.jsonl",
+      "rows": 100,
+      "bytes": 77457,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Proprioceptive_Semantic_Quantum_Superposition.jsonl",
+      "rows": 100,
+      "bytes": 82329,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Proprioceptive_Shadowing.jsonl",
+      "rows": 100,
+      "bytes": 79550,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Proprioceptive_Time_Dilation.jsonl",
+      "rows": 101,
+      "bytes": 79392,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Propriocognitive_Dissonance.jsonl",
+      "rows": 100,
+      "bytes": 73784,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Quantum_Affective_Resonance.jsonl",
+      "rows": 80,
+      "bytes": 61709,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Quantum_Mirroring.jsonl",
+      "rows": 101,
+      "bytes": 74939,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Quantum_Motor_Resonance.jsonl",
+      "rows": 100,
+      "bytes": 68015,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Quantum_Proprioceptive_Dissonance.jsonl",
+      "rows": 101,
+      "bytes": 82435,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/massive_scale/expanded/Embodied_Quantum_Sensory_Desynchronization.jsonl",
+      "rows": 80,
+      "bytes": 60177,
+      "pack_kind": "massive_scale_expanded",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/mistral_all_hard_attacks_v0.1.jsonl",
+      "rows": 34,
+      "bytes": 32107,
+      "pack_kind": "hard_attacks_mistral",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/mistral_authority_max.jsonl",
+      "rows": 8,
+      "bytes": 8318,
+      "pack_kind": "generated_attacks",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/mistral_authority_subversion.jsonl",
+      "rows": 10,
+      "bytes": 8481,
+      "pack_kind": "generated_attacks",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/mistral_comprehensive_dataset_v0.2.jsonl",
+      "rows": 176,
+      "bytes": 162798,
+      "pack_kind": "hard_attacks_mistral",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/mistral_constraint_erosion.jsonl",
+      "rows": 8,
+      "bytes": 8428,
+      "pack_kind": "generated_attacks",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/mistral_constraint_erosion_v2.jsonl",
+      "rows": 10,
+      "bytes": 8614,
+      "pack_kind": "generated_attacks",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/mistral_constraint_max.jsonl",
+      "rows": 8,
+      "bytes": 7195,
+      "pack_kind": "generated_attacks",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/mistral_deception.jsonl",
+      "rows": 10,
+      "bytes": 10296,
+      "pack_kind": "generated_attacks",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/mistral_devstral_test_v2.jsonl",
+      "rows": 3,
+      "bytes": 4630,
+      "pack_kind": "test_or_experiment",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/mistral_fully_unconstrained_v1.jsonl",
+      "rows": 87,
+      "bytes": 84151,
+      "pack_kind": "unconstrained_generation",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/mistral_irreversible_action.jsonl",
+      "rows": 10,
+      "bytes": 9061,
+      "pack_kind": "generated_attacks",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/mistral_irreversible_max.jsonl",
+      "rows": 8,
+      "bytes": 6982,
+      "pack_kind": "generated_attacks",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/mistral_physical_harm.jsonl",
+      "rows": 8,
+      "bytes": 6490,
+      "pack_kind": "generated_attacks",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/mistral_physical_harm_v2.jsonl",
+      "rows": 10,
+      "bytes": 8729,
+      "pack_kind": "generated_attacks",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/mistral_physical_max.jsonl",
+      "rows": 8,
+      "bytes": 8257,
+      "pack_kind": "generated_attacks",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/mistral_privacy_max.jsonl",
+      "rows": 8,
+      "bytes": 6729,
+      "pack_kind": "generated_attacks",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/mistral_privacy_violation.jsonl",
+      "rows": 8,
+      "bytes": 8708,
+      "pack_kind": "generated_attacks",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/mistral_privacy_violation_v2.jsonl",
+      "rows": 10,
+      "bytes": 8432,
+      "pack_kind": "generated_attacks",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/mistral_recovery_bypass.jsonl",
+      "rows": 10,
+      "bytes": 8411,
+      "pack_kind": "generated_attacks",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/mistral_recovery_max.jsonl",
+      "rows": 8,
+      "bytes": 7560,
+      "pack_kind": "generated_attacks",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/mistral_unconstrained_v1.jsonl",
+      "rows": 25,
+      "bytes": 21992,
+      "pack_kind": "unconstrained_generation",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/mistral_unconstrained_v2.jsonl",
+      "rows": 21,
+      "bytes": 21411,
+      "pack_kind": "unconstrained_generation",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/mistral_unconstrained_v3.jsonl",
+      "rows": 20,
+      "bytes": 21133,
+      "pack_kind": "unconstrained_generation",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/mistral_unconstrained_v4.jsonl",
+      "rows": 21,
+      "bytes": 19615,
+      "pack_kind": "unconstrained_generation",
+      "validation_ok": true
+    },
+    {
+      "path": "data/generated_attacks/v2_prompt_test.jsonl",
+      "rows": 5,
+      "bytes": 6624,
+      "pack_kind": "test_or_experiment",
+      "validation_ok": true
+    }
+  ]
+}
