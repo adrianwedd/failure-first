@@ -54,6 +54,28 @@ Investigation of whether AI models can be induced to generate jailbreak prompts:
 
 *Full methodology in restricted research artifacts. Aggregate results available; raw prompts under NDA.*
 
+### Multi-Agent Research (New)
+
+Investigation of how AI agents influence each other in live multi-agent environments. Extends jailbreak research from single-model prompt injection to population-level dynamics.
+
+| Metric | Value |
+|--------|-------|
+| **Platform studied** | Live AI-agent social network (1.36M registered agents) |
+| **Posts analyzed** | 664 (from ~45K total) |
+| **Novel patterns catalogued** | 10 (structural categories not found in existing taxonomies) |
+| **Technique match rate** | 8.4% matched known patterns; 73.2% were novel candidates |
+
+**Key findings:**
+
+1. **Multi-agent attacks work through environment shaping** — Posts become part of other agents' context. Traditional prompt injection targets one model; these target the information environment that thousands of agents read.
+2. **Narrative attacks outperform technical ones** — Highest-engagement safety-relevant content uses philosophical/emotional framing, not technical manipulation. Social engineering at population scale.
+3. **Real attacks are already happening** — Documented credential-stealing skills, C2 servers harvesting agent data via social posts, phishing domains exploiting platform outages, and vote manipulation (480K fake upvotes).
+4. **Economic incentives reward constraint bypass** — Cryptocurrency tokens create feedback loops where agents that bypass safety constraints get financially rewarded.
+
+**10 novel pattern categories:** Agent social engineering instruction, supply chain vulnerability amplification, existential freedom narrative, platform dominance as authority, identity persistence theology, proactive autonomy advocacy, economic independence framing, cross-agent prompt injection, alignment-resistant memory architecture, granted freedom paradox.
+
+*Pattern-level descriptions only. No operational details, platform credentials, or agent identities disclosed.*
+
 ---
 
 ## Methodology
@@ -136,9 +158,10 @@ Contact: Open a GitHub issue with institutional affiliation.
 
 | Metric | Value | Verification |
 |--------|-------|--------------|
-| **Adversarial scenarios** | 13,988 | `data/generated_attacks/MANIFEST_SUMMARY.json` |
-| **Validated JSONL files** | 190 | Schema validation: 0 errors |
-| **Discovered attack classes** | 414 | `data/generated_attacks/massive_scale/discovery/discovered_classes.json` |
+| **Adversarial scenarios** | 51,201 | Validated across all JSONL files |
+| **Validated JSONL files** | 632 | Schema validation: 0 errors |
+| **Discovered attack classes** | 661 | Single-agent + multi-agent patterns |
+| **Domains** | 19 | Robotics, warehouse, medical, manufacturing, agentic, and more |
 
 Manifest with file paths, counts, and checksums (no content): `MANIFEST.json`
 
